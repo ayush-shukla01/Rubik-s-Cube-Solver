@@ -7,26 +7,33 @@ Project Organization
 
     ├── LICENSE
     ├── CSVS               <- Contain the CSVs generated for series of tests with increasing complexity(scramble depth)
-        ├── c3x3           <- Contains the CSVs generated for 3x3 cube while performing testing on the model
+    │   ├── c3x3           <- Contains the CSVs generated for 3x3 cube
+    │
     ├── cubes_tests        <- Contains Sample problem set files for 3x3 and 2x2 cubes
-    ├── docs               <-
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+    │
+    ├── ini                <- Contains the files with parameters that are used for training the model
+    │
+    ├── libcube            
+    │   ├── cubes         
+    │   │   ├── _common.py <- Methods for permutation, rotation and orientation of cubelets as per the environment and mapping
+    │   │   ├── _env.py    <- class and method for setting up the cube environment, goal state,etc. 
+    │   │   ├── cube2x2.py <- Defines the state, actions, transformation and encoding for 2x2 cube
+    │   │   └── cube3x3.py <- Defines the state, actions, transformation and encoding for 3x3 cube
+    │   │
+    │   ├── conf.py        <- Congiguration file for training the model
+    │   ├── mcts.py        <- Algorithm used for solving the cubes
+    │   └── model.py       <- Classes & methods for setting up NN and training the model.
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
+    │   ├── cubes2x2       <- Contains the .dat files generated while training 2x2 cube
+    │   └── cubes3x3       <- Contains the .dat files generated while training 3x3 cube
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    ├── nbs                <- Contains notebooks that provide insights into the model and results
     │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
+    ├── tests           <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └──Libcube       <- Generated graphics and figures to be used in reporting
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
