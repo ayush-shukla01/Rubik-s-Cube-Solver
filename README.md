@@ -37,7 +37,9 @@
 
  
   **Neural Network Architecture**
+  
   The neural network architecture is taken from the paper.
+  
   ![image](https://user-images.githubusercontent.com/98556827/153911088-92735e16-aa96-46ea-9085-6c2a4c66a90f.png)
   
 # 4. Model Application
