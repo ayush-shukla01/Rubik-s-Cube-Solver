@@ -1,5 +1,13 @@
 # Rubik-s-Cube-Solver
 
+#Table of Content
+1. General Info
+2. Data Representation
+3. Training
+4. Model Application
+5. Interpretation
+
+#1. General Info
 
 
 Project Organization
@@ -31,34 +39,20 @@ Project Organization
     │   └── cubes3x3       <- Contains the .dat files generated while training 3x3 cube
     │
     ├── nbs                <- Contains notebooks that provide insights into the model and results
+    │                      
+    ├── tests              <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └──Libcube         <- Generated graphics and figures to be used in reporting
+    │   │   └──Cubes        
+    │                      
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment
+    │                         
+    ├── gen_cubes.py       <- Tool to generate test set for solver.py
+    │                       
+    ├── solver.py          <- Source code for use in this project.
     │
-    ├── tests           <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └──Libcube       <- Generated graphics and figures to be used in reporting
+    ├─ train.py            <- Trains the model
+    │                      
+    ├─ train_debug.py      <-  Used to analyze trained model and other training process details
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    └── run_tests.sh       <- tox file with settings for running tox; see tox.readthedocs.io
 
-#Table of Content
-1. General Info
-2. Data Representation
-3. Training
