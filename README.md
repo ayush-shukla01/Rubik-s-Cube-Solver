@@ -4,8 +4,7 @@
 1. General Info
 2. Data Representation
 3. Training
-4. Model Application
-5. Interpretation
+4. Project Organization
 
 # 1. General Info
  This project is an attempt to implement the following paper: https://arxiv.org/abs/1805.07470.
@@ -42,13 +41,13 @@
   
   ![image](https://user-images.githubusercontent.com/98556827/153911088-92735e16-aa96-46ea-9085-6c2a4c66a90f.png)
   
-# 4. Model Application
+
   
   
 
 
 
-Project Organization
+# 4. Project Organization
 ------------
 
     ├── LICENSE
