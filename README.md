@@ -94,3 +94,14 @@ Project Organization
     │
     └── run_tests.sh       <- tox file with settings for running tox; see tox.readthedocs.io 
 
+#  📖 Usage
+The below instructions will let you run this project on your local environment
+
+# Training
+In order to train the model, you need to pass arguments while running the train.py file in the terminal. You will need to pass the .ini files in "-i"  option which contains all the parameters for training. You will need to pass the name of the run in -n option 
+
+`python ./train.py -i ini/cube2x2-zero-goal-d200.ini -n run1`
+
+# Testing 
+
+`./solver.py -e cube2x2 -m saves/cube2x2-zero-goal-d200-t1/best_1.4547e-02.dat --max-steps 1000 --cuda -r 20`
