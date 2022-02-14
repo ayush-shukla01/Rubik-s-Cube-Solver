@@ -98,7 +98,9 @@ Project Organization
 The below instructions will let you run this project on your local environment
 
 # Training
-In order to train the model, you need to pass arguments while running the train.py file in the terminal. You will need to pass the .ini files in "-i"  option which contains all the parameters for training. You will need to pass the name of the run in -n option 
+In order to train the model, you need to pass arguments while running the train.py file in the terminal. They are as follows:
+- Pass the .ini files in "-i"  option which contains all the parameters for training. 
+- Pass the name of the run in -n option 
 
 `python ./train.py -i ini/cube2x2-zero-goal-d200.ini -n run1`
 
