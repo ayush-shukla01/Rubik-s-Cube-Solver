@@ -75,7 +75,7 @@
     │   ├── cubes2x2       <- Contains the .dat files generated while training 2x2 cube
     │   └── cubes3x3       <- Contains the .dat files generated while training 3x3 cube
     │
-    ├── nbs                <- Contains notebooks that provide insights into the model and results
+    ├── notebooks          <- Contains notebooks that provide insights into the model and results
     │                      
     ├── tests              <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └──Libcube         <- Generated graphics and figures to be used in reporting
