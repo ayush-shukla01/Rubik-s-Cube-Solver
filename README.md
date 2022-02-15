@@ -101,7 +101,7 @@ In order to train the model, you need to pass arguments while running the train.
 - Pass the .ini files in "-i"  option which contains all the parameters for training. 
 - Pass the name of the run in -n option 
 
-`python ./train.py -i ini/cube2x2-zero-goal-d200.ini -n run1`
+`python train.py -i ini/cube2x2-zero-goal-d200.ini -n run1`
 
 # Testing 
 You need to pass parameters in order to run solver.py, they are:
@@ -116,4 +116,4 @@ You need to pass parameters in order to run solver.py, they are:
 - Pass --plot option in order to produce plots of test results
 - Pass -o option along with .csv file name, to generate output csv file of the cubes solved by model.   
 
-`python ./solver.py -e cube2x2 -m saves/cube2x2-zero-goal-d200-t1/best_1.4547e-02.dat --max-steps 1000 --cuda -r 20`
+`python solver.py -e cube2x2 -m saves/cube2x2-zero-goal-d200-t1/best_1.4547e-02.dat --max-steps 1000 --cuda -r 20`
