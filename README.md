@@ -1,12 +1,7 @@
 # Rubik-s-Cube-Solver
 
-#Table of Content
-1. General Info
-2. Data Representation
-3. Training
-4. Project Organization
 
-# 1. General Info
+# 1. Overview
  This project is an attempt to implement the following paper: https://arxiv.org/abs/1805.07470.
   
  A 3x3 Rubik's Cube has 4.33x10¹⁹ distinct state, with only one goal state. A brute froce search approach for solving the cube will be highly impractical. In this project, Autodidactic Iteration (ADI) algorithm was used to train the model. ADI is an iterative supervised learning which trains a deep neural network which takes in inpui state s and outputs a value, policy pair.  The policy output p is a vector containing the move probabilities for each of the 12 possible moves from that state. Once the network is trained, the policy is used to reduce breadth and the value is used to reduce depth in the MCTS.
